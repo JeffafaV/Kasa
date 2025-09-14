@@ -1,0 +1,12 @@
+.footer {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+
+  > p {
+    color: white;
+  }
+}

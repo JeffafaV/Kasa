@@ -1,0 +1,56 @@
+.home {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  // add box shadow 1, 4 , add opacity to image, remove boder
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 30px;
+    background-image: url("../assets/home-bg-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.15);
+
+    > p {
+      color: white;
+      font-size: 64px;
+      font-weight: bold;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+  }
+
+  .gallery {
+    background-color: #f6f6f6;
+    height: 800px;
+    width: auto;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px;
+    gap: 30px;
+
+    &__card {
+      margin: auto;
+      height: 100%;
+      width: 100%;
+      // max-width: 500px;
+      // min-width: 150px;
+      border-radius: 30px;
+      background-color: #ff6060;
+    }
+  }
+}
+
+// max width for everything 1800 px (except footer since that spans the whole page)
+// make a tablet version for the gallery at 1300 px (2 columns instead of 3)
