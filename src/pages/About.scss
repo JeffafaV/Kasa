@@ -1,0 +1,23 @@
+.about {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  &__header {
+    height: 200px;
+    border-radius: 30px;
+    background-image: url("../assets/about-bg-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
