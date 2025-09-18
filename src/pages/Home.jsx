@@ -1,4 +1,6 @@
+import Thumbnail from "../components/Thumbnail";
 import "./Home.scss";
+import rentals from "../data/rentals.json";
 
 function Home() {
   return (
@@ -7,12 +9,14 @@ function Home() {
         <p>At home, everywhere, and anywhere</p>
       </section>
       <section className="gallery">
-        <article className="gallery__card"></article>
-        <article className="gallery__card"></article>
-        <article className="gallery__card"></article>
-        <article className="gallery__card"></article>
-        <article className="gallery__card"></article>
-        <article className="gallery__card"></article>
+        {rentals.map((rental) => (
+          <Thumbnail
+            key={rental.id}
+            title={rental.title}
+            cover={rental.cover}
+            link={`/rentals/${rental.id}`}
+          />
+        ))}
       </section>
     </div>
   );
