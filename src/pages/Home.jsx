@@ -14,7 +14,7 @@ function Home() {
             key={rental.id}
             title={rental.title}
             cover={rental.cover}
-            link={`/rentals/${rental.id}`}
+            link={`/rental/${rental.id}`}
           />
         ))}
       </section>

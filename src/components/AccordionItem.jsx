@@ -5,6 +5,20 @@ import "./Accordion.scss";
 function AccordionItem({ title, content }) {
   const [open, setOpen] = useState(false);
 
+  const renderContent = () => {
+    if (Array.isArray(content)) {
+      return (
+        <ul>
+          {content.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      );
+    }
+
+    return <p>{content}</p>;
+  };
+
   return (
     <article className={`accordion ${open ? "open" : ""}`}>
       <div className="accordion__header">
@@ -23,7 +37,7 @@ function AccordionItem({ title, content }) {
         className="accordion__content"
         style={{ height: open ? "auto" : "0px" }}
       >
-        <p>{content}</p>
+        {renderContent()}
       </div>
     </article>
   );

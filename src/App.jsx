@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import Rental from "./pages/Rental";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} /> {/* default route */}
           <Route path="about" element={<About />} />
+          <Route path="/rental/:id" element={<Rental />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

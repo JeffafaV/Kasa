@@ -1,7 +1,7 @@
 .accordion {
   width: 100%;
   max-width: 1000px;
-  margin: auto;
+  // margin: auto;
 
   &__header {
     display: flex;
@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ff6060;
-    padding: 6px 8px;
+    padding: 8px 15px;
     border-radius: 7px;
     position: relative;
     z-index: 2;
@@ -42,20 +42,36 @@
   &__content {
     overflow: hidden;
     background-color: #f6f6f6;
-    padding: 0 8px;
+    padding: 0 15px;
     transition: height 0.3s linear, padding 0.3s linear, margin 0.3s linear;
     position: relative;
     z-index: 1;
+    border-radius: 0 0 7px 7px;
 
+    ul,
     p {
       margin: 0;
-      margin-top: 0px;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    li,
+    p {
+      // margin: 0;
+      // margin-top: 0px;
+      font-size: 18px;
+    }
+
+    li {
+      list-style-type: none;
     }
   }
 
   &.open {
     .accordion__content {
-      padding: 6px 8px;
+      padding: 25px 15px;
       margin-top: -6px;
     }
   }
