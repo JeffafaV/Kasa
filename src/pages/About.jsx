@@ -1,7 +1,12 @@
 import "./About.scss";
 import AccordionItem from "../components/AccordionItem";
+import { useEffect } from "react";
 
 function About() {
+  useEffect(() => {
+    document.title = "About | Kasa";
+  }, []);
+
   return (
     <div className="about">
       <section className="about__header"></section>

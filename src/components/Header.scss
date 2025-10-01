@@ -1,6 +1,7 @@
 .header {
-  width: 95%;
-  margin: auto;
+  width: 100%;
+  // margin: auto;
+  max-width: 1240px;
 
   &__nav {
     display: flex;

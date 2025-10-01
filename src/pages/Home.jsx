@@ -1,8 +1,13 @@
 import Thumbnail from "../components/Thumbnail";
 import "./Home.scss";
 import rentals from "../data/rentals.json";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    document.title = "Kasa";
+  }, []);
+
   return (
     <div className="home">
       <section className="home__header">

@@ -4,6 +4,7 @@ import RentalDescription from "../components/RentalDescription";
 import AccordionItem from "../components/AccordionItem";
 import rentals from "../data/rentals.json";
 import { useParams, Navigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function Rental() {
   const { id } = useParams();
@@ -11,7 +12,10 @@ function Rental() {
 
   const rental = rentals.find((r) => r.id === id);
 
-  console.log(rental);
+  useEffect(() => {
+    document.title = `${rental.title} | Kasa`;
+  }, []);
+
   if (!rental) {
     return <Navigate to="/404" replace />;
   }
