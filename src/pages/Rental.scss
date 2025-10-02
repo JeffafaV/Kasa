@@ -1,5 +1,5 @@
 .rental {
-  width: 100%;
+  width: 95%;
   // margin: auto;
   display: flex;
   flex-direction: column;
@@ -12,8 +12,16 @@
     justify-content: space-between;
     align-items: flex-start;
     // margin: 0;
-    gap: 100px;
+    gap: 75px;
     // height: 500px;
     // align-self: center;
+  }
+}
+
+@media (max-width: 849px) {
+  .rental {
+    .collapse-list {
+      gap: 25px;
+    }
   }
 }

@@ -1,7 +1,8 @@
 .header {
-  width: 100%;
+  width: 95%;
   // margin: auto;
-  max-width: 1240px;
+  max-width: 1178px;
+  margin-top: 25px;
 
   &__nav {
     display: flex;
@@ -24,8 +25,25 @@
 
       .nav-link,
       .nav-active {
-        font-size: 24px;
+        font-size: 32px;
         color: black;
+      }
+    }
+  }
+}
+
+@media (max-width: 849px) {
+  .header {
+    margin-top: 12.5px;
+
+    &__nav {
+      .link_list {
+        gap: 30px;
+
+        .nav-link,
+        .nav-active {
+          font-size: 20px;
+        }
       }
     }
   }

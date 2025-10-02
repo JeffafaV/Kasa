@@ -12,13 +12,13 @@ function Rental() {
 
   const rental = rentals.find((r) => r.id === id);
 
-  useEffect(() => {
-    document.title = `${rental.title} | Kasa`;
-  }, []);
-
   if (!rental) {
     return <Navigate to="/404" replace />;
   }
+
+  useEffect(() => {
+    document.title = `${rental.title} | Kasa`;
+  }, []);
 
   return (
     <div className="rental">

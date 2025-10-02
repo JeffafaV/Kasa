@@ -1,11 +1,10 @@
 .home {
-  width: 100%;
+  width: 95%;
   // margin: auto;
   display: flex;
   flex-direction: column;
   gap: 50px;
 
-  // add box shadow 1, 4 , add opacity to image, remove boder
   &__header {
     display: flex;
     flex-direction: row;
@@ -24,6 +23,7 @@
       font-size: 64px;
       font-weight: bold;
       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      text-align: center;
     }
   }
 
@@ -42,5 +42,21 @@
   }
 }
 
-// max width for everything 1800 px (except footer since that spans the whole page)
-// make a tablet version for the gallery at 1300 px (2 columns instead of 3)
+@media (max-width: 849px) {
+  .home {
+    gap: 25px;
+
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+
+    &__header {
+      height: 111px;
+
+      > p {
+        font-size: 32px;
+        // text-align: center;
+      }
+    }
+  }
+}

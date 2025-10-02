@@ -18,3 +18,16 @@
     text-decoration: underline;
   }
 }
+
+@media (max-width: 849px) {
+  .notfound {
+    padding: 1.5rem;
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}

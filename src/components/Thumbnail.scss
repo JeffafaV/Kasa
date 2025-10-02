@@ -2,8 +2,8 @@
   position: relative;
   margin: 0 auto;
   margin-bottom: 1.25rem;
-  transform: scale(1);
-  transition-duration: 0.5s;
+  // transform: scale(1);
+  // transition-duration: 0.5s;
   width: 100%;
 
   &:hover {
@@ -23,7 +23,7 @@
     padding-right: 1.25rem;
     padding-left: 1.25rem;
     color: white;
-    font-size: 1.125rem;
+    font-size: 20px;
     font-weight: 500;
     line-height: 142.6%;
   }
@@ -31,5 +31,18 @@
 
 .thumb,
 .thumb-cover-wrapper img {
-  height: 15.9375rem;
+  height: 320px;
+}
+
+@media (max-width: 849px) {
+  .thumb {
+    &-title {
+      font-size: 18px;
+    }
+  }
+
+  .thumb,
+  .thumb-cover-wrapper img {
+    height: 200px;
+  }
 }

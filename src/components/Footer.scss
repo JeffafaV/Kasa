@@ -12,5 +12,14 @@
   > p {
     color: white;
     margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 849px) {
+  .footer {
+    > p {
+      font-size: 16px;
+    }
   }
 }

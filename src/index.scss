@@ -15,7 +15,14 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    // not sure if it looks better with or without it
     flex: 1;
     max-width: 1240px;
+  }
+}
+
+@media (max-width: 849px) {
+  .page {
+    gap: 25px;
   }
 }

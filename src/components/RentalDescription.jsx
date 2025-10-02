@@ -7,24 +7,12 @@ function RentalDescription({ title, host, rating, location, tags }) {
 
   return (
     <section className="description">
-      <div className="description__top">
+      <div className="description__property">
         <div className="title">
           <h1>{title}</h1>
           <span>{location}</span>
         </div>
 
-        <div className="host">
-          <div className="host__name">
-            <span>{firstName}</span>
-            <span>{lastName}</span>
-          </div>
-
-          {/* Author image */}
-          <img src={host.picture} />
-        </div>
-      </div>
-
-      <div className="description__bottom">
         <div className="tag-list">
           {tags.map((tag, index) => (
             <p key={index} className="tag">
@@ -32,8 +20,18 @@ function RentalDescription({ title, host, rating, location, tags }) {
             </p>
           ))}
         </div>
+      </div>
 
-        {/* stars */}
+      <div className="description__host">
+        <div className="host">
+          <div className="host__name">
+            <span>{firstName}</span>
+            <span>{lastName}</span>
+          </div>
+
+          <img src={host.picture} />
+        </div>
+
         <div>
           {[...Array(5)].map((_, index) => (
             <img

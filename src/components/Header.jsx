@@ -5,7 +5,10 @@ function Header() {
   return (
     <header className="header">
       <nav className="header__nav">
-        <img src="/header-logo-desktop.png" alt="header-logo" />
+        <picture>
+          <source media="(max-width: 849px)" srcSet="/header-logo-mobile.png" />
+          <img src="/header-logo-desktop.png" alt="header-logo" />
+        </picture>
         <div className="link_list">
           <NavLink
             className={({ isActive }) => (isActive ? "nav-active" : "nav-link")}
