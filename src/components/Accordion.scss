@@ -17,6 +17,7 @@
     span {
       font-size: 24px;
       color: white;
+      font-weight: bold;
     }
 
     button {
@@ -81,7 +82,7 @@
   .accordion {
     &__header {
       span {
-        font-size: 18px;
+        font-size: 13px;
       }
 
       button {
@@ -97,7 +98,7 @@
       p {
         // margin: 0;
         // margin-top: 0px;
-        font-size: 16px;
+        font-size: 12px;
       }
     }
   }

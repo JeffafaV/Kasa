@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     height: 200px;
-    border-radius: 30px;
+    border-radius: 25px;
     background-image: url("../assets/home-bg-img.png");
     background-size: cover;
     background-position: center;
@@ -20,7 +20,7 @@
 
     > p {
       color: white;
-      font-size: 64px;
+      font-size: 48px;
       font-weight: bold;
       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
       text-align: center;
@@ -31,7 +31,7 @@
     background-color: #f6f6f6;
     height: auto;
     width: auto;
-    border-radius: 30px;
+    border-radius: 25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     // justify-content: center;
@@ -46,7 +46,12 @@
   .home {
     gap: 25px;
 
+    &__header {
+      border-radius: 10px;
+    }
+
     .gallery {
+      background-color: transparent;
       grid-template-columns: 1fr;
     }
 
@@ -54,7 +59,7 @@
       height: 111px;
 
       > p {
-        font-size: 32px;
+        font-size: 24px;
         // text-align: center;
       }
     }

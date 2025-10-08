@@ -7,6 +7,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 25px;
   }
 
   &__number {
@@ -41,6 +42,10 @@
 @media (max-width: 849px) {
   .panel {
     height: 225px;
+
+    &__image {
+      border-radius: 10px;
+    }
 
     &__number {
       font-size: 16px;
